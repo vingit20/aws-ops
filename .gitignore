@@ -1,18 +1,51 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# Other files and folders
-.settings/
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/packages/repositories.config
+# NuGet v3's project.json files produces more ignorable files
+*.nuget.props
+*.nuget.targets
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Windows Store app package directories and files
+AppPackages/
+BundleArtifacts/
+Package.StoreAssociation.xml
+_pkginfo.txt
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# .PowershellModules - if one needs a powershell module dependency, one
+# can save it here. used by tools/OpenConsole.psm1
+.PowershellModules
+
+# python
+*.pyc
+*.config
+
+
+**/Generated Files/
+**/Merged/*
+**/Unmerged/*
+profiles.json
+*.metaproj
+*.swp
+
+
+# keys
+*.pem
+*.ppk
+
+
+#other
+*.zip
+*.txt
+**/ec2-Instances/*
+**/ec2-snapshots/*
